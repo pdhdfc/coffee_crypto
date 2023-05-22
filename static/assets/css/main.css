@@ -304,7 +304,7 @@ span {
 }
 
 .section-heading__black .title {
-    color: #000;
+    color: #dc3545;
 }
 
 .border-effect a,
@@ -2019,7 +2019,7 @@ h4,
 h5,
 h6 {
     font-weight: 400;
-    color: #000;
+    color: rgb(255, 255, 255);
     margin: 0;
     line-height: 1.4;
     font-family: "Bebas Neue", cursive;
@@ -3218,7 +3218,8 @@ h6 {
 .overlay.active {
     opacity: 0.5;
     visibility: visible;
-    cursor: url(../images/icons/cancel.png), auto;
+    cursor: url("{% static 'images/icons/cancel.png' %}"),
+    auto;
 }
 
 .side-info-wrapper,
@@ -4419,7 +4420,7 @@ h6 {
 }
 
 .about__list li {
-    color: #1b2026;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     -webkit-transition: 0.3s;
@@ -4568,7 +4569,7 @@ h6 {
     top: 0;
     left: 10px;
     background: #ffffff;
-    color: #000;
+    color: rgb(250, 243, 243);
     border: 1px solid #E2DFDD;
     font-weight: 500;
     margin-top: 0;
@@ -5629,7 +5630,7 @@ h6 {
 }
 
 .popular-menu__lists .popular-menu__list .content .title {
-    color: #000;
+    color: rgb(245, 241, 241);
 }
 
 .popular-menu__lists .popular-menu__list .thumb {

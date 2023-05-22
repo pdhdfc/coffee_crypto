@@ -15,3 +15,14 @@ admin.site.register(PopularMenu, PopularMenuAdmin)
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
     list_display = ('name', 'mobile_number', 'number_of_persons', 'date', 'time')
+
+
+@admin.register(ProductCategory)
+class ProductCategoryAdmin(admin.ModelAdmin):
+    list_display = ('category_name',)
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ('name', 'category', 'price')
+    list_filter = ('category',)
+    search_fields = ('name', 'category__category_name')

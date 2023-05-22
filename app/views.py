@@ -31,3 +31,13 @@ def book_table_success_page(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def menu(request):
+    categories = ProductCategory.objects.all()
+    products = Product.objects.select_related('category').all()
+    context = {
+        'categories': categories,
+        'products': products
+    }
+    return render(request, 'menu.html', context)
