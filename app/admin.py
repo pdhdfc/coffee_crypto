@@ -26,3 +26,8 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'price')
     list_filter = ('category',)
     search_fields = ('name', 'category__category_name')
+
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'subject')

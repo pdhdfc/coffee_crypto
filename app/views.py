@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from . models import *
+from .forms import *
+
 # Create your views here.
 def index(request):
     popular_menu=PopularMenu.objects.all()
@@ -8,10 +10,7 @@ def index(request):
     }
     return render(request, 'index.html',context)
 
-from .forms import ReservationForm
 
-from django.shortcuts import render, redirect
-from .forms import ReservationForm
 
 def book_table(request):
     if request.method == 'POST':
@@ -41,3 +40,24 @@ def menu(request):
         'products': products
     }
     return render(request, 'menu.html', context)
+
+
+
+def gallery(request):
+    return render(request, 'gallery.html')
+
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('success')  # Redirect to a success page
+    else:
+        form = ContactForm()
+    
+    return render(request, 'contact.html', {'form': form})
+
+
+def success(request):
+    return render(request, 'success.html')

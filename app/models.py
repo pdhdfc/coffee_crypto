@@ -27,3 +27,8 @@ class Product(models.Model):
     price=models.CharField(max_length=10, help_text="end with .00")
     
 
+class Contact(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    subject = models.CharField(max_length=255)
+    message = models.TextField()

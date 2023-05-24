@@ -10,7 +10,9 @@ urlpatterns = [
     path('book_table_success_page', views.book_table_success_page, name='book_table_success_page'),
     path('about', views.about, name='about'),
     path('menu', views.menu, name='menu'),
-    
+    path('gallery', views.gallery, name='gallery'),
+    path('contact', views.contact, name='contact'),
+    path('success', views.success, name='success'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

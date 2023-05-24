@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="about__area about__area--3 dark-bg position-relative pt-120">
+    <div class="container-fluid custom-width custom-width__2">
+        <div class="row g-0">
+            <div class="col-xl-6 d-flex">
+                <div class="about__left about__left--3 d-flex align-items-stretch">
+                    <img src="{% static 'assets/images/about/about-bg-3-1.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="about__right about__history">
+                    <div class="section-heading">
+                        {% comment %} <span class="sub-title">our history</span> {% endcomment %}
+                        <h2 class="title mb-25">Your Meaasge has been received</h2>
+                        <p>We will call you shortly.</p>
+                        <p>Thank you for choosing coffee crypto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
