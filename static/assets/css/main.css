@@ -145,6 +145,12 @@ body {
     line-height: 29px;
 }
 
+.logoimg {
+    max-width: 100%;
+    height: 101px;
+    transition: all 0.3s ease-out 0s;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -2695,7 +2701,7 @@ h6 {
     text-transform: uppercase;
     color: #ffffff;
     letter-spacing: 2px;
-    background: #C7A17A;
+    background: #009e86;
     padding: 9.5px 34px;
     text-decoration: none;
     border-radius: 5px;
