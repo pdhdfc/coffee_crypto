@@ -7,13 +7,18 @@
 <head>
 
     <!--========= Required meta tags =========-->
-    <meta charset="utf-8">
+    {% comment %} <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Coffee Crypto </title>
+    <title>Coffee Crypto </title> {% endcomment %}
+
+    {% block  meta %}
+    {% endblock  %}
+
+
 
     <!--====== Favicon ======-->
     <link rel="shortcut icon" href="{% static 'assets/images/logo/favicon.ico' %}" type="images/x-icon" />
@@ -469,7 +474,7 @@
                     <div class="col-lg-7">
                         <div class="footer__logo--content">
                             {% comment %} <img class="mb-15" src="{% static 'assets/images/logo/logo.png' %}" alt=""> {% endcomment %}
-                            <p>Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam quis quam venenatis fringilla. Morbi vestibulum</p>
+                            <p>Coffee and Crypto: A cutting-edge company that combines the love for coffee with the exciting world of cryptocurrencies. Join us today!</p>
                         </div>
                     </div>
                     <div class="col-lg-5 align-self-end">

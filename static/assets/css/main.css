@@ -3562,14 +3562,14 @@ h6 {
 }
 
 .hero__area--3 {
-    padding-top: 285px;
+    padding-top: 107px;
     background-position: center top;
     padding-bottom: 165px;
 }
 
 @media (max-width: 767px) {
     .hero__area--3 {
-        padding-top: 225px;
+        padding-top: 168px;
     }
 }
 

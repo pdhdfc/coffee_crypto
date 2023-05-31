@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block  meta %}
+<meta charset="utf-8">
+<meta name="description" content="coffee website">
+<meta name="keywords" content="coffee,coffee,coffee">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% endblock  %}
+
+
 {% block content %}
 
 <main>
@@ -10,8 +18,8 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-7 col-md-8 align-self-center">
                      <div class="hero__content hero__content--3 position-relative">
-                         <h1 class="title mb-20">rosted coffee <br>
-                            for you </h1>
+                         <h3 class="title mb-0">Stay grounded  <br>
+                            and let coffee bean your inspiration!" </h3>
                             <p>The coffee is brewed by first roasting the green coffee beans over hot <br> coals in a brazier. given an opportunity to sample.</p>
                             <div class="btns mt-45 d-flex align-items-center justify-content-start">
                                 <a href="menu" class="site-btn">testy Coffee</a>
@@ -87,8 +95,8 @@
                         <div class="section-heading">
                             <span class="sub-title">our history</span>
                             <h2 class="title mb-25">Create a new story with us</h2>
-                            <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibhtincidunt.</p>
-                            <p>Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam quis quam venenatis fringilla. Morbi vestibulum id tellus mmodo mattis. Aliquam erat volutpat.</p>
+                            <p>Step into our coffee shop, where creativity flows with every sip. Welcome to a haven where stories come alive and dreams take flight. At our cozy tables, let your imagination wander as the aroma of freshly brewed coffee fills the air. </p>
+                            <p>Each cup holds a tale waiting to be written, a blank page yearning for your unique voice. Together, let's create a new story, a symphony of flavors and conversations that intertwine with the magic of caffeine. Join us, dear storyteller, and let your words dance upon the pages of our shared narrative. Together, we'll brew tales that warm the soul and inspire the world.</p>
                         </div>
                     </div>
                 </div>
@@ -127,6 +135,11 @@
                             </div>
                             {% endfor %}
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 text-center">
+                        <a href="menu" class="site-btn mt-60">View more</a>
                     </div>
                 </div>
             </div>
