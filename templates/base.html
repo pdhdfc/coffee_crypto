@@ -7,16 +7,31 @@
 <head>
 
     <!--========= Required meta tags =========-->
-    {% comment %} <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Coffee Crypto </title> {% endcomment %}
+    <title>Coffee Crypto </title> 
 
-    {% block  meta %}
-    {% endblock  %}
+   <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '990689548626260');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=990689548626260&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
 
 
@@ -269,7 +284,7 @@
                 <div class="side-info">
                     <div class="side-info__content mb-35">
                         <h4 class="title mb-5">About us</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  nisi ut aliquip ex ea commodo consequat.</p>
+                        {% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  nisi ut aliquip ex ea commodo consequat.</p> {% endcomment %}
                         <a class="site-btn mt-20" href="contact">Contact us</a>
                     </div>
                     <div class="contact__info--wrapper mt-15">
@@ -291,8 +306,8 @@
                     </div>
                     <div class="social-links mt-20 d-flex justify-content-start align-items-center">
                         <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                        <a href="#0"><i class="fab fa-google-plus-g"></i></a>
+                        {% comment %} <a href="#0"><i class="fab fa-twitter"></i></a>
+                        <a href="#0"><i class="fab fa-google-plus-g"></i></a> {% endcomment %}
                         <a href="#0"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -315,7 +330,7 @@
         <div class="side-info">
             <div class="side-info__content mb-35">
                 <h4 class="title mb-5">About us</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  nisi ut aliquip ex ea commodo consequat.</p>
+                {% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  nisi ut aliquip ex ea commodo consequat.</p> {% endcomment %}
                 <a class="site-btn mt-20" href="contact">Contact us</a>
             </div>
             <div class="contact__info--wrapper mt-15">
@@ -337,8 +352,8 @@
             </div>
             <div class="social-links mt-20 d-flex justify-content-start align-items-center">
                 <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                <a href="#0"><i class="fab fa-twitter"></i></a>
-                <a href="#0"><i class="fab fa-google-plus-g"></i></a>
+                {% comment %} <a href="#0"><i class="fab fa-twitter"></i></a>
+                <a href="#0"><i class="fab fa-google-plus-g"></i></a> {% endcomment %}
                 <a href="#0"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
@@ -474,15 +489,15 @@
                     <div class="col-lg-7">
                         <div class="footer__logo--content">
                             {% comment %} <img class="mb-15" src="{% static 'assets/images/logo/logo.png' %}" alt=""> {% endcomment %}
-                            <p>Coffee and Crypto: A cutting-edge company that combines the love for coffee with the exciting world of cryptocurrencies. Join us today!</p>
+                            {% comment %} <p>Coffee and Crypto: A cutting-edge company that combines the love for coffee with the exciting world of cryptocurrencies. Join us today!</p> {% endcomment %}
                         </div>
                     </div>
                     <div class="col-lg-5 align-self-end">
                         <div class="social-links d-flex align-items-center justify-content-lg-end">
-                            <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a>
+                            {% comment %} <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> {% endcomment %}
                             <a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#0" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="#0" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                            {% comment %} <a href="#0" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#0" target="_blank"><i class="fab fa-google-plus-g"></i></a> {% endcomment %}
                             <a href="#0" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
